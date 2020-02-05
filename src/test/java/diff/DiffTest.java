@@ -33,6 +33,10 @@ public class DiffTest {
         assertEquals(DPDiff.diff(s1, s2), 4);
     }
 
-
+    @Test
+    public void testAStarDiff() {
+        AStarDiff aStarDiff = new AStarDiff(s1, s2);
+        assertEquals(aStarDiff.diff(), 4);
+    }
 
 }
